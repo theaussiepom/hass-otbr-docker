@@ -19,7 +19,7 @@ services:
       OTBR_WEB_PORT: 7586
       AUTOFLASH_FIRMWARE: 0
     devices:
-      - /dev/ttyUSB1:/dev/ttyUSB1
+      - /dev/serial/by-id/usb-Nabu_Casa_Home_Assistant_Connect_ZBT-1_9240a391ab38ef118f4a357af3d9b1e5-if00-port0:/dev/ttyUSB1
       - /dev/net/tun:/dev/net/tun
     volumes:
       - ./otbr_data:/var/lib/thread
